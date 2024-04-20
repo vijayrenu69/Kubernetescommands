@@ -1,0 +1,13 @@
+Now Run This command To Get The Token we are going to run in Node to Join the Master Machine OR If you copy the Token Pervoisuly when you Run kueadam init command then you use that Token also
+
+kubeadm token create --print-join-command
+
+Now Run This command On Node1 and Node2 To Join Master Machine
+
+kubeadm join 172.31.47.167:6443 --token as1ln2.h0omu32b5l4x6k1s --discovery-token-ca-cert-hash sha256:e9257075e40581372d5b94a6e8fe611509003e831180fcdddb5e1299e16668d8
+Note: Replace This Token From Your Token
+
+Now we Check if Node Connect Or Not On Master Machine Run This On Master Machine
+
+
+kubectl get nodes
