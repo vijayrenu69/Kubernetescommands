@@ -1,0 +1,11 @@
+If Node is not getting added into Master.
+
+Run the Below Command on Master Node.
+
+I found how to solve this question.
+
+sudo -i
+swapoff -a
+exit
+strace -eopenat kubectl version
+and you can type kubectl get nodes again.
